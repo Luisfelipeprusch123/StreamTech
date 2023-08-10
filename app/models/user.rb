@@ -3,6 +3,6 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable 
-
-         # has_one_attached :avatar
+  has_many :posts
+  validates :age, numericality: { only_integer: true, greater_than_or_equal_to: 0, allow_nil: true }
 end

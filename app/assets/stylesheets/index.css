@@ -1,0 +1,120 @@
+/* Estilos para o cabeçalho */
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilos para o menu dropdown */
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    color: black;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 100%;
+    left: 0;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Estilos para a barra de pesquisa */
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.search-bar:hover {
+    background-color: #444;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.search-bar input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+}
+
+.search-bar button {
+    background-color: #ff5733;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-bar button:hover {
+    background-color: #e6522f;
+}
+
+.dark-mode {
+    background-color: #1e1e1e;
+    color: #fff;
+}
+
+/* Estilos para a lista de navegação */
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #e6522f;
+}
