@@ -23,19 +23,33 @@
             <% end %>
         </div>
         <div class="search-bar">
-            <input type="text" placeholder="Pesquisar...">
-            <button>Buscar</button>
+            <input type="text"  id="search-bar" placeholder="Pesquisar...">
+            <button id="search-button">Buscar</button>
         </div>
         <nav class="nav-links">
             <ul>
-                <li><a href="#">Videos</a></li>
-                <li><a href="#">Cortes</a></li>
+                 <li><a href="#">Seja membro</a></li>
+                <li><a href="#">Jogos</a></li>
                 <li><a href="#">Lives</a></li>
             </ul>
         </nav>
+
+         <!-- Renderizar os shorts do youtube -->
+    <h1>Seja bem-vindo a  Sreamtech</h1>
+
+<h2>YouTube Shorts</h2>
+
+<ul id="shorts-list">
+  <% @shorts.each do |short| %>
+    <li>
+      <iframe src="https://www.youtube.com/embed/<%= short.id.video_id %>" frameborder="0" allowfullscreen></iframe>
+    </li>
+  <% end %>
+</ul>
     </header>
 
 
+   
 
 
 
@@ -69,7 +83,7 @@
 
 
 
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const dropdownContent = document.getElementById('dropdownContent');
@@ -100,6 +114,10 @@
                 body.classList.toggle('dark-mode');
             });
         });
+
+
+  
+
     </script>
 </body>
 </html>

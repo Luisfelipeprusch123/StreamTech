@@ -118,3 +118,33 @@
 .nav-links a:hover {
     color: #e6522f;
 }
+
+
+
+
+/* Ajustar o layout da listas de videos */
+ul#shorts-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+}
+
+ul#shorts-list li {
+    margin: 10px;
+}
+
+iframe {
+    width: 300px;
+    height: 168.75;
+}
+
+
+h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}

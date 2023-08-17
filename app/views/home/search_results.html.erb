@@ -1,0 +1,5 @@
+<% searchResults.each do |video| %>
+  <li>
+    <iframe src="https://www.youtube.com/embed/<%= video.id.video_id %>" frameborder="0" allowfullscreen></iframe>
+  </li>
+<% end %>

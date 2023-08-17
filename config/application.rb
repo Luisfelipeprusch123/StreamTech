@@ -1,6 +1,9 @@
 require_relative "boot"
-
+require 'dotenv/load'
 require "rails/all"
+
+require 'google/apis/youtube_v3'
+require 'googleauth'
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
@@ -18,5 +21,10 @@ module Sreamtech
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+
+# API do youtube
+  Youtube = Google::Apis::YoutubeV3
+  youtube = Youtube::YouTubeService.new
+
   end
 end
